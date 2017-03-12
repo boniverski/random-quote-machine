@@ -1,0 +1,32 @@
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  vertical-align: baseline;
+}
+
+.quote-box {
+  display: table;
+  position: relative;
+  border: 2px solid black;
+  border-radius: 8px;
+  height: 230px;
+}
+
+.quote-text {
+  text-align: center;
+  clear: both;
+  padding: 40px 30px 10px 30px;
+  height: auto;
+  font-size: 30px;
+}
+
+.quote-author {
+  text-align: right;
+  clear: both;
+  height: auto;
+}
+
+.buttons {
+  right: 10px;
+}
