@@ -6,27 +6,55 @@
 }
 
 .quote-box {
-  display: table;
-  position: relative;
-  border: 2px solid black;
-  border-radius: 8px;
-  height: 230px;
+  border: 10px solid;
+  border-color: #85C226 #F7C200 #4493A0 #EA4335;
+  border-radius: 0px 30px 70px 20px;
+  position: absolute;
+  margin: auto;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  max-width: 600px;
+  max-height: 210px;
 }
 
 .quote-text {
   text-align: center;
-  clear: both;
   padding: 40px 30px 10px 30px;
   height: auto;
-  font-size: 30px;
+  font-size: 25px;
 }
 
 .quote-author {
-  text-align: right;
-  clear: both;
+  margin: 15px 10px;
+  text-align: center;
   height: auto;
 }
 
 .buttons {
-  right: 10px;
+  position: relative;
+  margin: 10px 10px;
+  bottom: 0;
+}
+
+#button-quote {
+  position: absolute;
+  margin: auto 10px;
+  color: white;
+  text-transform: uppercase;
+  padding: 5px 10px;
+  background-color: #2bbbad;
+  border: 2px solid #2bbbad;
+  border-width: 1px 1px 3px 1px;
+  border-radius: 4px;
+  font-size: 15px;
+}
+
+.icon-twitter {
+  padding: 3px 10px;
+  font-size: 25px;
+  color: #1da1f2;
+  float: right;
+  margin-right: 18px;
 }
