@@ -3,6 +3,7 @@
   padding: 0;
   list-style: none;
   vertical-align: baseline;
+  box-sizing: border-box;
 }
 
 .quote-box {
@@ -11,36 +12,36 @@
   border-radius: 0px 30px 70px 20px;
   position: absolute;
   margin: auto;
+  padding: 18px 18px;
+  display: table;
   top: 0;
   right: 0;
   bottom: 0;
   left: 0;
   max-width: 600px;
-  max-height: 210px;
+  height: auto;
 }
 
 .quote-text {
   text-align: center;
-  padding: 40px 30px 10px 30px;
+  /*margin: 40px 30px 10px 30px;*/
   height: auto;
   font-size: 25px;
 }
 
 .quote-author {
-  margin: 15px 10px;
+  margin: 25px 10px;
   text-align: center;
   height: auto;
 }
 
 .buttons {
   position: relative;
-  margin: 10px 10px;
   bottom: 0;
 }
 
 #button-quote {
   position: absolute;
-  margin: auto 10px;
   color: white;
   text-transform: uppercase;
   padding: 5px 10px;
@@ -48,7 +49,7 @@
   border: 2px solid #2bbbad;
   border-width: 1px 1px 3px 1px;
   border-radius: 4px;
-  font-size: 15px;
+  font-size: 12px;
 }
 
 .icon-twitter {
@@ -56,5 +57,4 @@
   font-size: 25px;
   color: #1da1f2;
   float: right;
-  margin-right: 18px;
 }
