@@ -2,7 +2,6 @@
   margin: 0;
   padding: 0;
   list-style: none;
-  vertical-align: baseline;
   box-sizing: border-box;
 }
 
@@ -11,20 +10,18 @@
   border-color: #85C226 #F7C200 #4493A0 #EA4335;
   border-radius: 0px 30px 70px 20px;
   position: absolute;
+  display: table;
   margin: auto;
   padding: 18px 18px;
-  display: table;
   top: 0;
   right: 0;
   bottom: 0;
   left: 0;
-  max-width: 600px;
-  height: auto;
+  width: 600px;
 }
 
 .quote-text {
   text-align: center;
-  /*margin: 40px 30px 10px 30px;*/
   height: auto;
   font-size: 25px;
 }
@@ -37,11 +34,11 @@
 
 .buttons {
   position: relative;
-  bottom: 0;
 }
 
 #button-quote {
-  position: absolute;
+  position: relative;
+  float: left;
   color: white;
   text-transform: uppercase;
   padding: 5px 10px;
