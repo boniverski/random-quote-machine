@@ -8,3 +8,5 @@ function newQuote() {
   var randomNumber = Math.floor(Math.random() * (quotes.length));
   document.getElementById("text").innerHTML = quotes[randomNumber];
 }
+
+$(document).ready(newQuote);

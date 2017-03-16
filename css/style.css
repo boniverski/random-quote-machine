@@ -37,16 +37,20 @@
 }
 
 #button-quote {
-  position: relative;
-  float: left;
   color: white;
   text-transform: uppercase;
   padding: 5px 10px;
   background-color: #2bbbad;
-  border: 2px solid #2bbbad;
+  border: 2px solid;
+  border-color: #2bbbad #2bbbad #1d8e83 #2bbbad;
   border-width: 1px 1px 3px 1px;
   border-radius: 4px;
   font-size: 12px;
+}
+
+#button-quote:active {
+  border-color: #5b918b #1d8e83 #2bbbad #1d8e83;
+  border-width: 2px 1px 1px 1px;
 }
 
 .icon-twitter {
