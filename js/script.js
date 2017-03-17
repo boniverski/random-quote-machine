@@ -1,12 +1,10 @@
-var quotes = [
-  "Lorem Ipsam bla bla.  - XY",
-  "More Lorem Ipsam bla bla bla.  - ZY",
-  "Even more Lorem ipsam bla bla bla.  - VW"
-]
+$(document).ready(function() {
+  $("#button-quote").on("click", function() {
+    $.getJSON("https://crossorigin.me/http://quotes.stormconsultancy.co.uk/random.json", function(a) {
 
-function newQuote() {
-  var randomNumber = Math.floor(Math.random() * (quotes.length));
-  document.getElementById("text").innerHTML = quotes[randomNumber];
-}
+      $(".quote-text").html(a.quote);
+      $(".quote-author").html("<em>– " + a.author + "</em>");
 
-$(document).ready(newQuote);
+    });
+  });
+});
