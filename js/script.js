@@ -1,6 +1,6 @@
 // Getting quotes data from crossorigin.me APIs:
 function getQuote() {
-  $.getJSON("https://crossorigin.me/http://quotes.stormconsultancy.co.uk/random.json", function(json) {
+  $.getJSON("https://crossorigin.me/https://quotes.stormconsultancy.co.uk/random.json", function(json) {
     //Getting quote content, adding fading effect on change:
     $("#text").fadeOut("fast", function() {
       $(this).html(json.quote);
