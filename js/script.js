@@ -1,6 +1,6 @@
 // Getting quotes data from crossorigin.me APIs:
 function getQuote() {
-  $.getJSON("https://crossorigin.me/http://quotes.stormconsultancy.co.uk/random.json", function(json) {
+  $.getJSON("https://random-quote-generator.herokuapp.com/api/quotes/random", function(json) {
     //Getting quote content, adding fading effect on change:
     $("#text").fadeOut("fast", function() {
       $(this).html(json.quote);
@@ -21,7 +21,7 @@ function tweet(){
 
 //Taking care of buttons when page is loaded
 $(document).ready(function() {
-  //getQuote(); <-- Optional: Display quote on page load
+  getQuote(); // <-- Display quote on page load. Comment this to disable.
   $("#button-quote").on("click", getQuote);
   $("#button-tweet").on("click", tweet);
 
