@@ -3,26 +3,39 @@
   <head>
     <meta charset="utf-8">
     <title>Random Quote Machine</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Droid+Serif:400,700" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
-    <link href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">
+    <script src="https://use.fontawesome.com/8be9308866.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
     <script src="js/script.js"></script>
   </head>
   <body>
-    <div class="quote-box">
-      <div class="quote-text">
-        <!-- Optional: Add/Remove text below if getQuote(); is commented/uncommented -->
-        <span id="text"></span>
-      </div>
-      <div class="quote-author">
 
-      </div>
-      <div class="buttons">
-        <button id="button-quote">New Quote</button>
-        <a id="button-tweet">
-          <i class="icon-twitter" title="Tweet this quote!"></i>
-        </a>
-      </div>
-    </div>
+  <section class="quote-aligner"> <!-- Quote Box container -->
+
+    <section class="quote-box">
+      <section class="quote-text"> <!-- Generated Quote text section -->
+        <!-- Optional: Add/Remove text here if getQuote(); is commented/uncommented -->
+        <span id="text"></span> <!-- API quotes -->
+      </section> <!-- End Generated Quote text section -->
+
+      <div class="hr"></div> <!-- Horizontal line -->
+
+      <section class="quote-footer"> <!-- Section for quote's author and buttons -->
+
+        <section class="quote-author"></section> <!-- Generated Quote's author -->
+        <section class="quote-buttons">
+          <button id="button_new-quote">New Quote</button>
+          <button id="button_tweet">
+            <i class="fa fa-twitter icon-twitter" title="Tweet this quote!"></i>
+          </button>
+        </section> <!-- End quote-buttons -->
+
+      </section> <!-- End Section for quote's author and buttons -->
+    </section> <!-- End quote-box -->
+
+  </section> <!-- End Quote Box container -->
+
   </body>
 </html>

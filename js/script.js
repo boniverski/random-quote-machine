@@ -13,16 +13,16 @@ function getQuote() {
   });
 }
 
+//Generating tweet with quote and author
 function tweet(){
   var quote = $("#text").text();
   var author = $(".quote-author").text();
-  window.open("https://twitter.com/intent/tweet?text="+"\""+quote+"\""+"  "+"– "+author);
+  window.open(`https://twitter.com/intent/tweet?text="${quote}" – ${author}`);
 }
 
 //Taking care of buttons when page is loaded
 $(document).ready(function() {
   getQuote(); // <-- Display quote on page load. Comment this to disable.
-  $("#button-quote").on("click", getQuote);
-  $("#button-tweet").on("click", tweet);
-
+  $("#button_new-quote").on("click", getQuote);
+  $("#button_tweet").on("click", tweet);
 });
