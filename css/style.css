@@ -72,21 +72,23 @@ body {
         margin-left: auto; }
         .quote-aligner .quote-box .quote-footer .quote-buttons button {
           padding: 5px 15px;
-          font-size: 1em;
-          border: 1px solid #00CD91;
+          border: 1px solid transparent;
           border-radius: 17px;
           background: #FDFDFD;
           cursor: pointer;
           color: inherit;
+          font-size: 0.855em;
           outline: none;
-          transition: all 0.3s; }
-          .quote-aligner .quote-box .quote-footer .quote-buttons button:hover {
-            background: #00CD91;
-            color: #FDFDFD;
-            border-radius: 15px; }
-        .quote-aligner .quote-box .quote-footer .quote-buttons #button_tweet {
-          border: 1px solid transparent; }
-          .quote-aligner .quote-box .quote-footer .quote-buttons #button_tweet:hover {
-            background: #6898F3; }
+          transition: all 0.2s; }
+        .quote-aligner .quote-box .quote-footer .quote-buttons #button_new-quote {
+          color: #FDFDFD;
+          background: #00CD91; }
+          .quote-aligner .quote-box .quote-footer .quote-buttons #button_new-quote:active {
+            border: 1px solid #00CD91;
+            color: #545f63;
+            background: #DAF2EC; }
+        .quote-aligner .quote-box .quote-footer .quote-buttons #button_tweet:hover {
+          color: #FDFDFD;
+          background: #6898F3; }
 
 /*# sourceMappingURL=style.css.map */
